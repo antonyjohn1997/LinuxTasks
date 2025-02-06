@@ -21,6 +21,7 @@ Instead of using a separate server, modify the inventory file to use localhost.
 [localhost]
 127.0.0.1 ansible_connection=local
 
+
 paste the code 
 
 This tells Ansible to manage only the local machine.
@@ -44,6 +45,8 @@ This tells Ansible to manage only the local machine.
         update_password: "on_create"
         comment: "{{ item.comment }}"
       with_items: "{{ users }}"
+
+
 
 paste the code 
 
